@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54B80BF220CC3A9E0089572B /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B80BF120CC3A9E0089572B /* SearchResult.swift */; };
 		54C064CF20CA608D001940D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C064CE20CA608D001940D0 /* AppDelegate.swift */; };
 		54C064D120CA608D001940D0 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C064D020CA608D001940D0 /* SearchViewController.swift */; };
 		54C064D420CA608D001940D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54C064D220CA608D001940D0 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54B80BF120CC3A9E0089572B /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		54C064CB20CA608D001940D0 /* StoreSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54C064CE20CA608D001940D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54C064D020CA608D001940D0 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -35,9 +37,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54B80BF020CC3A7F0089572B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				54B80BF120CC3A9E0089572B /* SearchResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		54C064C220CA608D001940D0 = {
 			isa = PBXGroup;
 			children = (
+				54B80BF020CC3A7F0089572B /* Model */,
 				54C064CD20CA608D001940D0 /* StoreSearch */,
 				54C064CC20CA608D001940D0 /* Products */,
 			);
@@ -136,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54C064D120CA608D001940D0 /* SearchViewController.swift in Sources */,
+				54B80BF220CC3A9E0089572B /* SearchResult.swift in Sources */,
 				54C064CF20CA608D001940D0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
