@@ -28,7 +28,13 @@ class SearchViewController: UIViewController {
 }
 
 extension SearchViewController: UISearchBarDelegate{
+    // This method unifies the status bar with the search bar
+    func position(for bar: UIBarPositioning) -> UIBarPosition {
+        return .topAttached
+    }
+    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
         searchResults = []
         for i in 0...2{
             searchResults.append(String(format: "Fake Result %d for '%@'", i, searchBar.text!))
