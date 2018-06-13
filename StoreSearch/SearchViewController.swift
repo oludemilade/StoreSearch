@@ -62,8 +62,7 @@ extension SearchViewController: UISearchBarDelegate{
             print("URL: '\(url)'")
             
             if let data = performStoreRequest(with: url) {
-                let results = parse(data: data)
-                print("Got results: \(results)")
+                searchResults = parse(data: data)
             }
             tableView.reloadData()
         }
