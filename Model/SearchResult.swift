@@ -79,8 +79,21 @@ class SearchResult:Codable, CustomStringConvertible {
             case "software": return "App"
             case "song": return "Song"
             case "tv-episode": return "TV Episode"
+            case "coached-audio": return "Coached Audio"
+            case "interactive-booklet": return "Interactive Booklet"
+            case "podcast-episode": return "Podcast Episode"
+            case "pdf podcast": return "PDF for Podcast"
+            case "artistFor" : return "Artist For"
             default: break
         }
         return "Unknown"
     }
+}
+
+func < (lhs: SearchResult, rhs: SearchResult) -> Bool {
+    return lhs.name.localizedStandardCompare(rhs.name) == .orderedAscending
+}
+
+func > (lhs: SearchResult, rhs: SearchResult) -> Bool {
+    return lhs.name.localizedStandardCompare(rhs.name) == .orderedDescending
 }
